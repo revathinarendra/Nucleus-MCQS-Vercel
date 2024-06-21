@@ -8,7 +8,7 @@ urlpatterns = [
     path('important-questions/', views.get_important_questions, name='important_questions'),
     #path('star-questions/', views.get_star_questions, name='star_questions'),
     path('doubt-questions/', views.get_doubt_questions, name='doubt_questions'),
-    path('performance/<slug:subject_slug>/summary/', views.PerformanceSummaryView.as_view(), name='performance_summary'),
+    #path('performance/<slug:subject_slug>/summary/', views.PerformanceSummaryView.as_view(), name='performance_summary'),
     path('subject-performance/', views.SubjectPerformanceView.as_view(), name='subject-performance'),  
 ]
 
