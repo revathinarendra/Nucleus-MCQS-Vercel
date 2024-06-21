@@ -12,11 +12,6 @@
 # Collect static files
 python3.9 manage.py collectstatic --noinput
 
-# Create the public/static directory if it doesn't exist
-mkdir -p public/static
-
-# Move collected static files to the public/static directory
-mv staticfiles/* public/static/
 
 # Apply database migrations
 python3.9 manage.py makemigrations
